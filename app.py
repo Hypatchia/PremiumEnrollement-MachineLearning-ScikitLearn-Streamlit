@@ -36,15 +36,17 @@ if uploaded_file is not None and model_file is not None:
 
         # StandardScaler for scaling input data
         scaler = StandardScaler()
+        preprocessed_data = scaler.fit_transform(data)
+        
         
         # Make predictions using the pre-trained model directly on the uploaded test data
-        predictions = model.predict(data)  # Assuming your model can predict on the entire DataFrame
+        predictions = model.predict(preprocessed_data)  # Assuming your model can predict on the entire DataFrame
         
         # Add the predictions as a new column to the test data
-        data['Predicted'] = predictions
+        preprocessed_data['Predicted'] = predictions
 
 
         # Display the combined DataFrame with predictions
         st.subheader('Test Data with Predictions')
-        st.write(data)
+        st.write(preprocessed_data)
 
