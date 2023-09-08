@@ -17,30 +17,34 @@ model_file = st.file_uploader("Upload the Pre-Trained model", type=["pkl"])
 
 
 if uploaded_file is not None and model_file is not None:
-    # Read the test dataset
-    data = pd.read_csv(uploaded_file)
-
-    # Display the test dataset
-    st.subheader('Test Dataset')
-    st.write(data)
-
-    # Save the uploaded model to a temporary file
-    with tempfile.NamedTemporaryFile(delete=False) as temp_model_file:
-        temp_model_file.write(model_file.read())
-
-    # Load the pre-trained model using joblib
-    model = joblib.load(temp_model_file.name)
-
-    # StandardScaler for scaling input data
-    scaler = StandardScaler()
-
-    # Make predictions using the pre-trained model directly on the uploaded test data
-    predictions = model.predict(data)  # Assuming your model can predict on the entire DataFrame
+    predict_button = st.button("Predict")
     
-    # Add the predictions as a new column to the test data
-    data['Predicted'] = predictions
+    if predict_button:
+        # Read the test dataset
+        data = pd.read_csv(uploaded_file)
 
-    # Display the combined DataFrame with predictions
-    st.subheader('Test Data with Predictions')
-    st.write(data)
+        # Display the test dataset
+        st.subheader('Test Dataset')
+        st.write(data)
+
+        # Save the uploaded model to a temporary file
+        with tempfile.NamedTemporaryFile(delete=False) as temp_model_file:
+            temp_model_file.write(model_file.read())
+
+        # Load the pre-trained model using joblib
+        model = joblib.load(temp_model_file.name)
+
+        # StandardScaler for scaling input data
+        scaler = StandardScaler()
+        
+        # Make predictions using the pre-trained model directly on the uploaded test data
+        predictions = model.predict(data)  # Assuming your model can predict on the entire DataFrame
+        
+        # Add the predictions as a new column to the test data
+        data['Predicted'] = predictions
+
+
+        # Display the combined DataFrame with predictions
+        st.subheader('Test Data with Predictions')
+        st.write(data)
 
