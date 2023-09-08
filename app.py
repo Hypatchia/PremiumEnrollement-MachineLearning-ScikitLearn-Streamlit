@@ -47,15 +47,15 @@ if uploaded_file is not None and model_file is not None:
 
 
         # Display the combined DataFrame with predictions
-        st.subheader('Test Data (Standardized) with Predictions')
+        st.subheader('Test Data with Predictions')
         st.write(data)
 
 
+        
         # Add a download button for the DataFrame
-        download_button = st.button("Download Predictions CSV")
-        if download_button:
-            st.write("Downloaded!")
-            csv_data = data.to_csv(index=False)
-            b64_csv = b64encode(csv_data.encode()).decode()  # Encode to base64
-            href = f'<a href="data:file/csv;base64,{b64_csv}" download="predictions.csv">Click here to download predictions</a>'
-            st.markdown(href, unsafe_allow_html=True)
+        download_button = st.download_button(
+            label="Download Predictions CSV",
+            data=data.to_csv(index=False),
+            key="download_button",
+            file_name="predictions.csv",
+        )
