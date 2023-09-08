@@ -7,6 +7,9 @@ import tempfile
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 
 
+st.set_page_config(layout="wide")
+# Convert Streamlit app content to HTML
+st.markdown("""<div style="height: 100vh;">""", unsafe_allow_html=True)
 # Title
 st.title('Logistic Regression Prediction App')
 
