@@ -36,7 +36,7 @@ if uploaded_file is not None and model_file is not None:
 
         # StandardScaler for scaling input data
         scaler = StandardScaler()
-        preprocessed_data = scaler.fit_transform(data)
+        preprocessed_data = pd.DataFrame(scaler.fit_transform(data),columns=data.columns)
         
         
         # Make predictions using the pre-trained model directly on the uploaded test data
