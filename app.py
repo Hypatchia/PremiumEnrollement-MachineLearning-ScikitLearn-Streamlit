@@ -1,9 +1,7 @@
 # Import necessary libraries
 import streamlit as st
 import pandas as pd
-
 from sklearn.preprocessing import StandardScaler
-
 import joblib
 import tempfile
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
