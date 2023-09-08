@@ -59,4 +59,4 @@ if uploaded_file is not None and model_file is not None:
             key="download_button",
             file_name="predictions.csv",
         )
-        str.write("Download is successful")
+        st.write("Download is successful")
