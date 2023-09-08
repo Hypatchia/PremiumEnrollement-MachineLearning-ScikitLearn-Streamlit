@@ -6,12 +6,8 @@ import joblib
 import tempfile
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 
-
-st.set_page_config(layout="wide")
-# Convert Streamlit app content to HTML
-st.markdown("""<div style="height: 100vh;">""", unsafe_allow_html=True)
 # Title
-st.title('Logistic Regression Prediction App')
+st.title('Premium Enrollement Prediction App')
 
 # Upload CSV file
 uploaded_file = st.file_uploader("Upload a CSV file to make its predictions", type=["csv"])
