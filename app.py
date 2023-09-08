@@ -43,10 +43,18 @@ if uploaded_file is not None and model_file is not None:
         predictions = model.predict(preprocessed_data)  # Assuming your model can predict on the entire DataFrame
         
         # Add the predictions as a new column to the test data
-        preprocessed_data['Predicted'] = predictions
+        data['Predicted'] = predictions
 
 
         # Display the combined DataFrame with predictions
-        st.subheader('Test Data with Predictions')
-        st.write(preprocessed_data)
+        st.subheader('Test Data (Standardized) with Predictions')
+        st.write(data)
+
+
+        # Add a download button for the DataFrame
+        download_button = st.button("Download Predictions CSV")
+        if download_button:
+            st.write("Downloaded!")
+            csv = preprocessed_data.to_csv(index=False)
+            st.markdown(f'<a href="data:file/csv;base64,{b64encode(csv.encode()).decode()}" download="predictions.csv">Click here to download predictions</a>', unsafe_allow_html=True)
 
