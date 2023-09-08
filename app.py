@@ -5,7 +5,7 @@ from sklearn.preprocessing import StandardScaler
 import joblib
 import tempfile
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
-
+from base64 import b64encode
 # Title
 st.title('Premium Enrollement Prediction App')
 
@@ -55,6 +55,7 @@ if uploaded_file is not None and model_file is not None:
         download_button = st.button("Download Predictions CSV")
         if download_button:
             st.write("Downloaded!")
-            csv = preprocessed_data.to_csv(index=False)
-            st.markdown(f'<a href="data:file/csv;base64,{b64encode(csv.encode()).decode()}" download="predictions.csv">Click here to download predictions</a>', unsafe_allow_html=True)
-
+            csv_data = data.to_csv(index=False)
+            b64_csv = b64encode(csv_data.encode()).decode()  # Encode to base64
+            href = f'<a href="data:file/csv;base64,{b64_csv}" download="predictions.csv">Click here to download predictions</a>'
+            st.markdown(href, unsafe_allow_html=True)
