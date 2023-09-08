@@ -50,13 +50,20 @@ if uploaded_file is not None and model_file is not None:
         st.subheader('Test Data with Predictions')
         st.write(data)
 
-
+       
         
-        # Add a download button for the DataFrame
+        
+             # Add a download button for the DataFrame
         download_button = st.download_button(
             label="Download Predictions CSV",
-            data=data.to_csv(index=False),
+            data=data.to_csv(index=False).encode('utf-8'),
             key="download_button",
             file_name="predictions.csv",
+            mime="text/csv",
+
+
+            
         )
-        st.write("Download is successful")
+        
+            
+        
