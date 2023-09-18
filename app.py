@@ -53,7 +53,7 @@ if uploaded_file is not None and model_file is not None:
        
         
         
-             # Add a download button for the DataFrame
+        # Add a download button for the DataFrame
         download_button = st.download_button(
             label="Download Predictions CSV",
             data=data.to_csv(index=False).encode('utf-8'),
