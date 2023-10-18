@@ -20,22 +20,6 @@ The "Premium Service Enrollment Prediction" project represents an attempt to pre
 - Streamlit Web App
 - Jupyter Notebook, Visual Studio Code, Git, GitHub
 
-## Project Details
-
-For more detailed information about the project, you can check out the following sections:
-
-- [Problem Statement](#problem-statement)
-- [Project Scope](#project-scope)
-- [Project Deliverables](#project-deliverables)
-- [Demo Instructions](#demo-instructions)
-- [Sample Data](#sample-data)
-- [Metrics and Results](#metrics-and-results)
-- [Outcomes](#outcomes)
-
-## Demo
-
-You can try the app using the Streamlit view from [here](https://premiumenrollement.streamlit.app/).
-
 ## Sample Data
 
 A sample of the used dataset can be found [here](#) (Replace with your dataset link). The dataset includes 143 features and a target feature. It represents user demographics, user interactions with app features, user engagement with premium features, and user subscription to the premium service.
@@ -49,6 +33,12 @@ The project evaluation metrics include Confusion Matrix, Precision and Recall, a
 | Precision Score | 0.9128              |
 | Recall Score    | 0.8239              |
 | F1 Score        | 0.8661              |
+
+
+## Demo
+
+You can try the app using the Streamlit view from [here](https://premiumenrollement.streamlit.app/).
+
 
 
 
