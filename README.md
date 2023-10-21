@@ -2,6 +2,12 @@
 
 This project is about Predictive Analytics for Premium Service Enrollment. It aims to predict whether an app user will purchase a premium offer based on their interactions with the app.
 
+## Built with
+
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=flat&logo=python)](https://www.python.org/)
+[![Scikit-learn](https://img.shields.io/badge/Scikit--learn-0.24%2B-yellow?style=flat&logo=scikit-learn)](https://scikit-learn.org/stable/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-0.89%2B-green?style=flat&logo=streamlit)](https://streamlit.io/)
+
 ## Project Overview
 
 In today's dynamic business landscape, understanding customer behavior and optimizing service offerings is a primary goal. Knowing the intentions of your clients as a business gives insights about your next moves, driving decision-making.
