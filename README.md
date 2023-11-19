@@ -89,5 +89,11 @@ streamlit run app.py
 * Navigate to Processed_dataset
 - Upload the test_data.csv to app.
 
+
 ## Contact
+ Feel free to reach out to me on LinkedIn or through email & don't forget to visit my portfolio.
+ 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect%20with%20Me-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/samiabelhaddad/)
+[![Email](https://img.shields.io/badge/Email-Contact%20Me-brightgreen?style=flgat&logo=gmail)](mailto:samiamagbelhaddad@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit%20My%20Portfolio-white?style=flat&logo=website)](https://sambelh.azurewebsites.net/)
 
