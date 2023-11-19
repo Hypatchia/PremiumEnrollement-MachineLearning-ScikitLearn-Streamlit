@@ -1,6 +1,16 @@
-# Premium Service Enrollment Prediction
+## Project Overview
 
-This project is about Predictive Analytics for Premium Service Enrollment. It aims to predict whether an app user will purchase a premium offer based on their interactions with the app.
+In today's dynamic business landscape, understanding customer behavior and optimizing service offerings is a primary goal. Knowing the intentions of your clients as a business gives insights about your next moves, driving decision-making.
+
+The "Premium Service Enrollment Prediction" project represents an attempt to predict whether an app user will purchase the premium offer or not based on their interactions with the app.
+
+By delving into predictive analytics, the project not only enhances understanding of customer behavior but also equips the business with actionable insights, enabling strategic optimization of service offerings and resource allocation for maximum impact in a dynamic and competitive market.
+
+It also allows real-time inference of new customers by making predictions using the Streamlit app put there.
+
+You can try the app using the Streamlit view from [https://premiumenrollement.streamlit.app/](https://premiumenrollement.streamlit.app/).
+
+
 
 ## Built with
 
@@ -8,11 +18,6 @@ This project is about Predictive Analytics for Premium Service Enrollment. It ai
 [![Scikit-learn](https://img.shields.io/badge/Scikit--learn-0.24%2B-yellow?style=flat&logo=scikit-learn)](https://scikit-learn.org/stable/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-0.89%2B-green?style=flat&logo=streamlit)](https://streamlit.io/)
 
-## Project Overview
-
-In today's dynamic business landscape, understanding customer behavior and optimizing service offerings is a primary goal. Knowing the intentions of your clients as a business gives insights about your next moves, driving decision-making.
-
-The "Premium Service Enrollment Prediction" project represents an attempt to predict whether an app user will purchase the premium offer or not based on their interactions with the app.
 
 ### Project Components
 
@@ -26,10 +31,6 @@ The "Premium Service Enrollment Prediction" project represents an attempt to pre
 - Streamlit Web App
 - Jupyter Notebook, Visual Studio Code, Git, GitHub
 
-## Sample Data
-
-A sample of the used dataset can be found [here](#) (Replace with your dataset link). The dataset includes 143 features and a target feature. It represents user demographics, user interactions with app features, user engagement with premium features, and user subscription to the premium service.
-
 ## Metrics and Results
 
 The project evaluation metrics include Confusion Matrix, Precision and Recall, and ROC AUC Curves. Here are some of the results:
@@ -41,14 +42,6 @@ The project evaluation metrics include Confusion Matrix, Precision and Recall, a
 | F1 Score        | 0.8661              |
 
 
-## Demo
-
-You can try the app using the Streamlit view from [here](https://premiumenrollement.streamlit.app/).
-
-
-
-
-* The full streamlit app is fully available on this link: https://premiuemenrollmentprediction.streamlit.app/
 
 #### Dependencies:
 - Python 3.10.11
