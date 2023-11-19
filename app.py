@@ -7,8 +7,11 @@ import tempfile
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 from base64 import b64encode
 # Title
-st.title('Premium Enrollement Prediction App')
-
+st.header('This Tool will help u make predictions on your own dataset using ur own pre-trained model')
+st.write('1. The tool allows the upload of a CSV file and a pre-trained model.')
+st.write('2. It then makes predictions on the uploaded data using the pre-trained model') 
+st.write('3. The predictions is then displayed as a new column in the uploaded data.')
+st.write('4. The combined data is then displayed in a table.')
 # Upload CSV file
 uploaded_file = st.file_uploader("Upload a CSV file to make its predictions", type=["csv"])
 
