@@ -16,7 +16,7 @@ import streamlit as st
 
 st.set_page_config(layout='centered')
 model_path = "saved_models/enrollment_classifier.pkl"
-sample_data = pd.read_csv('sample_data.csv')
+sample_data = pd.read_csv('streamlit/sample_data.csv')
 
 
 
